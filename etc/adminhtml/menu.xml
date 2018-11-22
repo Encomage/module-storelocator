@@ -1,11 +1,25 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Encomage_StoreLocator::markers"
-             title="Encomage Store Locator"
+        <add id="Encomage_StoreLocator::storelocator"
+             title="Store Locator"
              module="Encomage_StoreLocator"
              sortOrder="80"
              resource="Encomage_StoreLocator::markers"
-             action="storelocator/markers/grid"/>
+             parent="Encomage_Core::menu"/>
+        <add id="Encomage_StoreLocator::markers"
+             title="Markers"
+             module="Encomage_StoreLocator"
+             sortOrder="10"
+             resource="Encomage_StoreLocator::markers"
+             action="storelocator/markers/grid"
+             parent="Encomage_StoreLocator::storelocator" />
+        <add id="Encomage_StoreLocator::storelocator_settings"
+             title="Settings"
+             module="Encomage_StoreLocator"
+             sortOrder="20"
+             resource="Encomage_StoreLocator::markers"
+             action="adminhtml/system_config/edit/section/store_locator"
+             parent="Encomage_StoreLocator::storelocator" />
     </menu>
 </config>

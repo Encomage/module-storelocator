@@ -2,9 +2,6 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="encomage" translate="label" sortOrder="100">
-            <label>Encomage</label>
-        </tab>
         <section id="store_locator" translate="label" sortOrder="15"
                  showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Store Locator</label>

@@ -7,6 +7,21 @@
     "OSL-3.0",
     "AFL-3.0"
   ],
+  "authors": [
+    {
+      "name": "Encomage",
+      "email": "hello@encomage.com",
+      "homepage": "https://www.encomage.com",
+      "role": "Technical Support"
+    }
+  ],
+  "keywords": [
+    "magento 2",
+    "store locator",
+    "extension",
+    "magento 2 store locator",
+    "google maps"
+  ],
   "autoload": {
     "files": [
       "registration.php"
@@ -14,5 +29,8 @@
     "psr-4": {
       "Encomage\\StoreLocator\\": ""
     }
+  },
+  "require": {
+    "encomage/module-core": "*"
   }
 }
